@@ -1,36 +1,22 @@
-// const heading = React.createElement("h1", {id:"heading"}, "hello world from react!");
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
+import React from "react";
+import ReactDOM from "react-dom";
 
-//CREATING NESTED DIV USING REACT
-//NOTE:- ReactElement(object) => HTML(browser understand)
+//!JSX(transpiled before it reaches the JS)-parcel-babel
 
-{
-  /* <div id="parent">
-  <div id="child">
-    <h1>i am h1 tag</h1>
-    <h2>i am h2 tag</h2>
-  </div>
-  <div id="child2">
-    <h1>i am h1 tag</h1>
-    <h2>i am h2 tag</h2>
-  </div>
-</div>; */
-}
+//
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "child" },
-    //use array for sibling
-    [
-      React.createElement("h1", {}, "i am h1 tag"),
-      React.createElement("h2", {}, "i am h2 tag"),
-    ]
-  )
+//!React functional component
+const Title = () => (
+  <h1 className="head">ABHISHEK WOW</h1>
 );
+const HeadingComponent = () => (
+  <div id="container">
+    <Title/>
+    <h1 className="heading"> HELLO react using functional component</h1>;
+  </div>
+);
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
-// react will replace whatever written div root in html
+root.render(<HeadingComponent />);
