@@ -15,3 +15,21 @@
 -differential bundling  - support older browser 
 -error handling
 -diagnostic
+
+
+/*Header
+-logo
+-nav items
+Body
+  - search
+  - RestaurantContainer
+  - RestaurantCard
+  - img
+     -Name of res,star rating
+
+footer
+-copyrighy
+-links
+-adress
+contact
+*/
