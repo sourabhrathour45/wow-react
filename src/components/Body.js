@@ -25,7 +25,7 @@ const Body = () => {
     const json = await data.json();
 
     console.log(json);
-    console.log("fuck offfff!!!!")
+    console.log("all okkkkkkk!!!!")
     setListOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   };
@@ -81,7 +81,7 @@ const Body = () => {
 
               const filteredList = listOfRestaurants.filter(
             
-              (res) => res.data.avgRating > 4.2
+              (res) => res.data.avgRating > 4
               );
                console.log(filteredList);
               setListOfRestaurants(filteredList);
