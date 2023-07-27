@@ -43,7 +43,7 @@ const Body = () => {
     
     
     //using ternary operator
-  return listOfRestaurants.length === 0 ? (
+  return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -92,7 +92,7 @@ const Body = () => {
         </button>
       </div>
       <div className="res-container">
-        {filteredRestaurants.map((restaurant) => (
+        {filteredRestaurants?.map((restaurant) => (
           <Link
             key={restaurant.data.id}
             to={"/restaurant/" + restaurant.data.id}
